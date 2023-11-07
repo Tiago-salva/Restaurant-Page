@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+
+:root {
+    --yellow: rgb(255, 191, 0);
+    --orange: rgb(248, 186, 0);
+    --red: rgb(236, 54, 8);
+    --dark-red: rgb(206, 41, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url(./img/robin-stickel-tzl1UCXg5Es-unsplash.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    color: white;  
+    height: 100vh;
+}
+
+#content {
+    height: 100%;
+}
+
+/* Header */
+header {
+    background-color: var(--yellow);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 2.5rem;
+    color: var(--red);
+}
+
+header > nav {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    border: none;
+}
+
+header > nav > button {
+    width: auto;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+header > nav > button:hover {
+    color: var(--red);
+}
+
+/* Home */
+.home-container {
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container {
+    height: 70%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.info-container > h1,
+.info-container > h1 > h1 {
+    font-size: 4rem;
+}
+
+.info-container > h1 > span {
+    font-size: 4rem;
+    margin-left: 15px;
+    color: var(--red);
+}
+
+.info-container > p {
+    font-size: 1.3rem;
+    margin: 10px 0 20px 0;
+    color: var(--yellow);
+}
+
+.info-container > h1,
+.info-container > p {
+    font-weight: 700;
+} 
+
+.info-container > button {
+    width: 200px;
+    height: 40px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info-container > button:hover {
+    background-color: var(--dark-red);
+}
+
+/* Menu */
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--yellow);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer > a:hover {
+    text-decoration: none;
+    color: var(--red);
+}
