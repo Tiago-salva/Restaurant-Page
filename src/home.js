@@ -1,36 +1,48 @@
+import { createMenuPage } from "./menu";
+
 export function createHomePage() {
     const contentDiv = document.getElementById("content");
+    const mainSection = document.querySelector(".main-section");
+    
+    contentDiv.classList.remove("menu-checked");
 
     // Home container
-    const homeContainer = document.createElement("section");
-    homeContainer.classList.add("home-container");
-    contentDiv.appendChild(homeContainer);
+    mainSection.classList.remove("menu-container");
+    mainSection.classList.remove("contact-container");
+    mainSection.classList.add("home-container");
 
-    // Information container
-    const infoContainer = document.createElement("div");
-    infoContainer.classList.add("info-container");
-    homeContainer.appendChild(infoContainer);
+    // Hero
+    const hero = document.createElement("div");
+    hero.classList.add("hero");
+    mainSection.appendChild(hero);
 
     // Headline
     const headLine1 = document.createElement("h1");
     headLine1.textContent = "The";
-    infoContainer.appendChild(headLine1);
+    hero.appendChild(headLine1);
 
     const highLight = document.createElement("span");
     highLight.textContent = "best";
     headLine1.appendChild(highLight);
 
     const headLine2 = document.createElement("h1");
-    headLine2.textContent = "hamburguers!";
+    headLine2.textContent = "hamburgers!";
     headLine1.appendChild(headLine2);
 
     // Paragraph
     const paragraph = document.createElement("p");
     paragraph.textContent = "Come to visit us or...";
-    infoContainer.appendChild(paragraph);
+    hero.appendChild(paragraph);
 
     // Go to menu button
     const toMenuBtn = document.createElement("button");
     toMenuBtn.textContent = "Order now";
-    infoContainer.appendChild(toMenuBtn);
+    hero.appendChild(toMenuBtn);
+
+    // Event for the menu btn
+    toMenuBtn.addEventListener("click", () => {
+        mainSection.innerHTML = "";
+        createMenuPage();
+        contentDiv.classList.add("menu-checked");
+    })
 };
