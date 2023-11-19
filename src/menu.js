@@ -23,7 +23,7 @@ export function createMenuPage() {
     const menu = [
         {
             name: "Classic FastBurger",
-            img: "Restaurant-Page/src/img/hamburger1.png",
+            img: "/Restaurant-Page/src/img/hamburger1.png",
             description: "A simple burger with mayonnaise and ketchup",
             price: "$10.99",
         },
@@ -35,13 +35,13 @@ export function createMenuPage() {
         },
         {
             name: "Big Triple FastBite",
-            img: "../../src/img/hamburger3.png",
+            img: "../src/img/hamburger3.png",
             description: "A triple burger with cheddar, bacon, tomato and lettuce",
             price: "$20.99",
         },
         {
             name: "FastNuggets X 10",
-            img: "../../src/img/nuggets.png",
+            img: "/src/img/nuggets.png",
             description: "10 chicken nuggets with 2 sauces",
             price: "$5.99",
         },
