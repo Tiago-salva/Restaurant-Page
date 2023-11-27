@@ -47,7 +47,7 @@ export function createMenuPage() {
         },
         {
             name: "FastSalad",
-            img: "../../src/img/salad.png",
+            img: "Usuarios/User/repos/Restaurant-Page/src/img/salad.png",
             description: "A salad with chicken, tomatoes and caramelized onion",
             price: "$10.99",
         },

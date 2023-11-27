@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initialLoad();
     createHomePage();
     tabsFunction();
+    console.log("Cambios hechos");
 });
 
 // Inital load

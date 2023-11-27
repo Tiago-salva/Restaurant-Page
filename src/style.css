@@ -15,6 +15,10 @@
     font-family: "Lobster", sans-serif;
 }
 
+.all-food-container:nth-child(1):nth-child(2) {
+    background-image: url(./img/hamburger1.png);
+}
+
 body {
     background-image: url(./img/background.jpg);
     background-attachment: fixed; 
